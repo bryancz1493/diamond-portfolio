@@ -3,6 +3,8 @@
     --fontcolor: rgb(64, 213, 224);
     --margin: 20px 0px 30px 0px;
     --bold: bold;
+    --margin10px: 10px;
+    --zero: 0;
   }
 
 header{ 
@@ -55,17 +57,48 @@ a {
     color: black;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    margin-right: 88px;
     display: center;
+    text-align: justify;
 }
 
 li {
     list-style-type: lower-greek;
+    position: static;
+    padding: var(--zero);
+    margin: var(--zero);
+    top: var(--zero);
+    right: var(--zero);
 }
 
 img {
-    margin-left: 10px;
-    width: 80px;
-    height: 80px;
+    margin-left: var(--margin10px);
+    width: 300px;
+    height: 300px;
 }
+
+.code-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.code-block {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--background);
+    padding: var(--margin10px);
+    border: 1px solid #ddd;
+}
+
+.code-container:hover .code-block {
+    display: contents;
+}
+
+.code-link {
+    text-decoration: none;
+    color: #1f6d24;
+    font-weight: var(--bold);
+}
+
 
