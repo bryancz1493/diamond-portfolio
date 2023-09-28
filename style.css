@@ -1,28 +1,43 @@
 :root {
     --background: rgb(12, 8, 47);
     --fontcolor: rgb(64, 213, 224);
-    --margin: 0px 0px 10px 0px;
+    --margin: 20px 0px 30px 0px;
+    --bold: bold;
   }
 
 header{ 
     background-color: var(--background);
     color: var(--fontcolor);
-    font-weight: bold;
-    display: flexbox;
+    font-weight: var(--bold);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    margin: var(--margin);
+    margin: 10px 0px;
+}
+
+h1 {
+    margin: 5px;
 }
 
 h2,
-h3,
-h4 {
+h3 {
     font-size: 25px;
     color: var(--fontcolor);
     background-color: var(--background);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: var(--margin);
-    font-weight: bolder;
+    font-weight: var(--bold);
+}
+
+h4 {
+    font-size: 25px;
+    color: var(--fontcolor);
+    background-color: var(--background);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: var(--bold);
+}
+
+body {
+    background-color: beige;
 }
 
 p {
@@ -41,16 +56,16 @@ a {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 88px;
+    display: center;
 }
 
 li {
     list-style-type: lower-greek;
 }
 
-nav {
-    cursor: move;
+img {
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
 }
 
-img {
-    padding-left: 10px;
-}
