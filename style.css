@@ -62,7 +62,7 @@ a {
 }
 
 li {
-    list-style-type: lower-greek;
+    /* list-style-type: lower-greek; */
     position: static;
     padding: var(--zero);
     margin: var(--zero);
@@ -100,5 +100,3 @@ img {
     color: #1f6d24;
     font-weight: var(--bold);
 }
-
-
