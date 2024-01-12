@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -11,15 +12,20 @@
     <header>
         <h1 class="My Portfolio">Bryan Chia</h1>
         <img src="./Images/Mugshot.JPG" alt="mugshot">
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="#Me" href="#Me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="#Projects" href="#Projects">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="#personal-info" href="#personal-info">Contact Me</a>
+            </li>
+          </ul>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#Me">About Me</a></li>
-            <li><a href="#Work">Work</a></li>
-            <li><a href="#Contact">Contact Me</a></li>
-        </ul>
-    </nav>
 
     <main>
         <section class="Portfolio content">
@@ -27,25 +33,34 @@
             <p>I am Bryan Chia. I have a twin brother, and he looks exactly like me! I am working as a civil engineer now. The reason I decided to join this bootcamp is I wanted to do coding for my degree, but it is too late for me to change my path in my senior year. So, I decided to attend UCB bootcamp to learn more about coding. My goal for this class is to be a back-end developer. Although things we are learning now are front-end related, I think things will work out well if I grind hard enough. "It is how much you desire about it. How much you want it." (Luigi, 2023/9/21)</p>
             </h2>
         </section>
-
+        
         <section class="Work">
             <h3 id="Projects">Work</h3>
-                <div class="code-container">
+                <!-- <div class="code-container">
                     <p><a href="Portfolio project">Portfolio</a></p>
                     <div class="code-block">
-                        <img src="./Images/Portfolio.JPG" alt="My Portfolio">
+                        <img src="./Images/Portfolio.JPG" class="img-thumbnail-1" alt="portfolio-img">
                     </div>
-                </div>
+                </div> -->
+
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="./Images/Portfolio.JPG" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Portfolio
+                      </a>
+                    </div>
+                  </nav>
                 
                 <div class="code-container">
-                    <p><a href="Project-1">BootCamp Project 1</a></p>
+                    <p><a href="Project-1">Gen Z Slang Translator</a></p>
                     <div class="code-block">
                         <img src="./Images/gen_Z_translator_Screenshot.png" alt="previous school project">
                     </div>
                 </div>
 
                 <div class="code-container">
-                    <p><a href="Civil 3D project">Civil 3D</a></p>
+                    <p><a href="Civil 3D project">Hacker Grove Coding Tracker</a></p>
                     <div class="code-block">
                         <img src="./Images/Civil3D.JPG" alt="recent Civil3D project">
                     </div>
@@ -54,33 +69,12 @@
 
         <section class="Contact">
             <h4 id="personal-info">Contact Me</h4>
-                <div class="code-container">
-                    <p><a href="#Phone number">Phone Number</a></p>
-                    <div class="code-block">
-                    <p><a href="#Phone number"><link rel="phone number" href="numbers">(319)-381 7314</p>
-                    </div>
-                </div>
-                
-                <div class="code-container">
-                    <p><a href="#Email">Email</a></p>
-                    <div class="code-block">
-                    <p><a href="#Email"><link rel="email" href="example@email.com">bryancz1493@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="code-container">
-                    <p><a href="#GitHub">GitHub</a></p>
-                    <div class="code-block">
-                    <p><a href="#GitHub"><link rel="GitHub" href="example@github.com">bryancz1493@github.com</p>
-                    </div>
-                </div>
-            
-                <div class="code-container">
-                    <p><a href="#social media account">Instagram</a></p>
-                    <div class="code-block">
-                    <p><a href="#social media account"><link rel="instagram" href="ins username">bryancz1493</p>
-                    </div>
-                </div>
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-link" href="#">(319)-381 7314</a>
+                <a class="nav-link" href="#">bryancz1493@gmail.com</a>
+                <a class="nav-link" href="#">GitHub</a>
+                <a class="nav-link" href="#">Instagram</a>
+              </nav>
         </section>
     </main>
 
